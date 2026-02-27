@@ -62,7 +62,7 @@ var scrMgr = (function(rn, rndEl) {
 			}
 		}
 		if (type == '333') {
-			scramblers['333oh'] = scramblers['333ft'] = callback;
+			scramblers['mrbl'] = scramblers['333oh'] = scramblers['333ft'] = callback;
 		}
 		return regScrambler;
 	}

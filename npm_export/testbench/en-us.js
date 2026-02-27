@@ -18,9 +18,6 @@ module.exports = {scrdata:[
 		['5x5 bld', "555bld", -60],
 		['3x3 mbld', "r3ni", 5]
 	]],
-	['===WCA===', [
-		['--', "blank", 0]
-	]],
 	['3x3x3', [
 		["random state (WCA)", "333", 0],
 		['random move', "333o", 25],
@@ -45,6 +42,7 @@ module.exports = {scrdata:[
 		['VLS', "vls", 0],
 		['cross solved', "f2l", 0],
 		['EOLine', "eoline", 0],
+		['EO Cross', "eocross", 0],
 		['easy cross', "easyc", 3],
 		['easy xcross', "easyxc", 4]
 	]],
@@ -131,6 +129,7 @@ module.exports = {scrdata:[
 		['old style', "mgmo", 70],
 		['2-generator R,U', "minx2g", 30],
 		['last slot + last layer', "mlsll", 0],
+		['random state', "mgmso", 0],
 		['PLL', "mgmpll", 0],
 		['Last Layer', "mgmll", 0]
 	]],
@@ -154,9 +153,6 @@ module.exports = {scrdata:[
 		["PLL", "sq1pll", 0],
 		['face turn metric', "sq1h", 40],
 		['twist metric', "sq1t", 20]
-	]],
-	['===OTHER===', [
-		['--', "blank", 0]
 	]],
 	['15 puzzle', [
 		['random state URLD', "15prp", 0],
@@ -183,7 +179,8 @@ module.exports = {scrdata:[
 		['9x9x9', "999", 120],
 		['10x10x10', "101010", 120],
 		['11x11x11', "111111", 120],
-		['NxNxN', "cubennn", 12]
+		['NxNxN', "cubennn", 12],
+		['Mirror Blocks', "mrbl", 0]
 	]],
 	['Gear Cube', [
 		['random state', "gearso", 0],
@@ -214,6 +211,10 @@ module.exports = {scrdata:[
 		['random state', "rediso", 0],
 		['MoYu', "redim", 8],
 		['random move', "redi", 20]
+	]],
+	['Dino Cube', [
+		['random state', "dinoso", 0],
+		['optimal', "dinoo", 0]
 	]],
 	['Ivy cube', [
 		['random state', "ivyso", 0],
@@ -247,21 +248,23 @@ module.exports = {scrdata:[
 		['random state', "ftoso", 0],
 		['random move', "fto", 30],
 		['L3T', "ftol3t", 0],
-		['L3T+LBT', "ftol4t", 0]
+		['L3T+LBT', "ftol4t", 0],
+		['TCP', "ftotcp", 0],
+		['edges only', "ftoedge", 0],
+		['centers only', "ftocent", 0],
+		['corners only', "ftocorn", 0],
+		['Diamond random state', "dmdso", 0]
 	]],
 	['Icosahedron', [
 		['Icosamate random move', "ctico", 60]
 	]],
-	['===SPECIAL===', [
-		['--', "blank", 0]
-	]],
 	['3x3x3 subsets', [
 		['2-generator R,U', "2gen", 0],
 		['2-generator L,U', "2genl", 0],
-		['Roux-generator M,U', "roux", 25],
+		['Roux-generator M,U', "roux", 0],
 		['3-generator F,R,U', "3gen_F", 0],
 		['3-generator R,U,L', "3gen_L", 0],
-		['3-generator R,r,U', "RrU", 25],
+		['3-generator R,r,U', "RrU", 0],
 		['Domino Subgroup', "333drud", 0],
 		['half turns only', "half", 0],
 		['last slot + last layer (old)', "lsll", 15]
@@ -281,9 +284,6 @@ module.exports = {scrdata:[
 		['23456 relay (WCA)', "r23456w", 0],
 		['234567 relay (WCA)', "r234567w", 0],
 		['Mini Guildford', "rmngf", 0]
-	]],
-	['===JOKES===', [
-		['--', "blank", 0]
 	]],
 	['1x1x1', [
 		['x y z', "111", 25]
